@@ -5,6 +5,7 @@ let sass = require('gulp-sass');
 let autoprefixer = require('gulp-autoprefixer');
 let cleanCSS = require('gulp-clean-css');
 let browserSync = require('browser-sync').create();
+let ghPages = require('gulp-gh-pages');
 
 function style () {
   return gulp.src('./sass/*.sass')
@@ -33,7 +34,13 @@ function build () {
     .pipe(gulp.dest('./dist/css'))
 }
 
+function deploy () {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+}
+
 exports.style = style;
 exports.watch = watch;
 exports.build = build;
+exports.deploy = deploy;
 
