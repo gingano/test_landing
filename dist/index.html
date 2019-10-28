@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -10,79 +10,80 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="body">
   <div class="container">
-    <header>
+    <header class="header">
       <div class="logo">
-        <img src="img/Logo.png" alt=""/>
+        <a href="#"><img src="img/Logo.png" alt="site logo"/></a>
       </div>
       <div class="wrapper">
-        <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox">
+        <input type="checkbox" id="nav-checkbox">
+        <label class="nav__burger-button" for="nav-checkbox">
           <div class="burger-line"></div>
           <div class="burger-line"></div>
           <div class="burger-line"></div>
           <div class="burger-line"></div>
         </label>
-        <nav class="menu">
-          <a href="#">О компании</a>
-          <a href="#">Услуги</a>
-          <a href="#">Отзывы</a>
-          <a href="#">Контакты</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">О компании</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Услуги</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+          </ul>
         </nav>
       </div>
     </header>
-    <article class="title">
-      <img class="article-image" src="img/img_1.png" alt="tablet on hands"/>
-      <div class="article-title">
-        <h1>Типы контента, которые вы можете публиковать в своем интернет-магазине.</h1>
-        <p>Грамотная контентная стратегия для интернет-магазина позволяет значительно увеличить объемы поискового трафика на сайт, за который предпринимателю нет необходимости платить. Это повышает рентабельность бизнеса, ускоряет его развитие и дает преимущество...</p>
-        <button class="details">Подробнее</button>
+    <article class="article title">
+      <img class="article__image" src="img/img_1.png" alt="tablet on hands"/>
+      <div class="article__title">
+        <h1 class="article__heading article__heading--main">Типы контента, которые вы можете публиковать в своем интернет-магазине.</h1>
+        <p class="article__paragraph article__paragraph--title">Грамотная контентная стратегия для интернет-магазина позволяет значительно увеличить объемы поискового трафика на сайт, за который предпринимателю нет необходимости платить. Это повышает рентабельность бизнеса, ускоряет его развитие и дает преимущество...</p>
+        <button class="article__button" title="Click here to see more">Подробнее</button>
       </div>
     </article>
-    <article class="efficiency">
-      <h2>Эффективность контентной стратегии</h2>
-      <p>Грамотная контентная стратегия для интернет-магазина позволяет значительно увеличить объемы поискового трафика на сайт, за который предпринимателю нет необходимости платить. Это повышает рентабельность бизнеса, ускоряет его развитие и дает преимущество по сравнению с конкурентами.Поэтому выстраивать эффективную стратегию контент-маркетинга в современных реалиях просто необходимо.</p>
-      <div class="sections-with-images">
-        <div class="section">
-          <div class="section-image">
-            <img src="img/people.svg" alt="">
+    <article class="article">
+      <h2 class="article__heading">Эффективность контентной стратегии</h2>
+      <p class="article__paragraph">Грамотная контентная стратегия для интернет-магазина позволяет значительно увеличить объемы поискового трафика на сайт, за который предпринимателю нет необходимости платить. Это повышает рентабельность бизнеса, ускоряет его развитие и дает преимущество по сравнению с конкурентами.Поэтому выстраивать эффективную стратегию контент-маркетинга в современных реалиях просто необходимо.</p>
+      <div class="article__sections-with-images">
+        <div class="article__section">
+          <div class="section__image">
+            <img src="img/people.svg" alt="Attendance improvement">
           </div>
-          <h3>Улучшение посещяемости</h3>
+          <h3 class="article__heading--third">Улучшение посещяемости</h3>
         </div>
-        <div class="section">
-          <div class="section-image">
-            <img src="img/trolley.svg" alt="">
+        <div class="article__section">
+          <div class="section__image">
+            <img src="img/trolley.svg" alt="Increase sales">
           </div>
-          <h3>Увеличение количества продаж</h3>
+          <h3 class="article__heading--third">Увеличение количества продаж</h3>
         </div>
-        <div class="section">
-          <div class="section-image">
-            <img src="img/calculator.svg" alt="">
+        <div class="article__section">
+          <div class="section__image">
+            <img src="img/calculator.svg" alt="Profit growth">
           </div>
-          <h3>Рост прибыли</h3>
+          <h3 class="article__heading--third">Рост прибыли</h3>
         </div>
-        <div class="section">
-          <div class="section-image">
-            <img src="img/bag.svg" alt="">
+        <div class="article__section">
+          <div class="section__image">
+            <img src="img/bag.svg" alt="Business stability">
           </div>
-          <h3>Стабильность бизнеса</h3>
+          <h3 class="article__heading--third">Стабильность бизнеса</h3>
         </div>
       </div>
     </article>
-    <article class="information">
-      <h2>Информация о товаре</h2>
-      <p>Это текст, который доступен посетителю на странице товара. Это может быть как качественно подготовленное описание, так и дополнительная информация: интересные факты, видеообзор, а также преимущества данного товара по сравнению с аналогами от конкурентов. Согласитесь, это будет гораздо интереснее, чем банальное описание технических характеристик.</p>
+    <article class="article">
+      <h2 class="article__heading">Информация о товаре</h2>
+      <p class="article__paragraph">Это текст, который доступен посетителю на странице товара. Это может быть как качественно подготовленное описание, так и дополнительная информация: интересные факты, видеообзор, а также преимущества данного товара по сравнению с аналогами от конкурентов. Согласитесь, это будет гораздо интереснее, чем банальное описание технических характеристик.</p>
     </article>
-    <article class="marketing-content">
-      <h2>Маркетинговый контент</h2>
-      <p>Речь идет о заметках и публикациях с информацией о скидках, распродажах, конкурсах и прочих акционных предложениях. Такой текст тоже необходимо тщательно прорабатывать, так как от стиля подачи во многом зависит и успех подобной акции. В современных реалиях вызвать интерес со стороны потенциального клиента не так уж и просто.</p>
+    <article class="article">
+      <h2 class="article__heading">Маркетинговый контент</h2>
+      <p class="article__paragraph">Речь идет о заметках и публикациях с информацией о скидках, распродажах, конкурсах и прочих акционных предложениях. Такой текст тоже необходимо тщательно прорабатывать, так как от стиля подачи во многом зависит и успех подобной акции. В современных реалиях вызвать интерес со стороны потенциального клиента не так уж и просто.</p>
     </article>
-    <article class="review-articles">
-      <h2>Обзорные статьи</h2>
-      <p>Они могут быть самыми разными – от разъяснения особенностей той или иной технологии и до демонстрации вариантов применения гаджета или другого подобного устройства. Важно раскрывать тему и давать пользователю исчерпывающий ответ на интересующий его вопрос. И да, не забывайте отвечать на комментарии – коммуникация должна быть двухсторонней.</p>
+    <article class="article">
+      <h2 class="article__heading">Обзорные статьи</h2>
+      <p class="article__paragraph">Они могут быть самыми разными – от разъяснения особенностей той или иной технологии и до демонстрации вариантов применения гаджета или другого подобного устройства. Важно раскрывать тему и давать пользователю исчерпывающий ответ на интересующий его вопрос. И да, не забывайте отвечать на комментарии – коммуникация должна быть двухсторонней.</p>
     </article>
   </div>
 </body>
-
 </html>

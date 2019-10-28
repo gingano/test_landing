@@ -1,0 +1,139 @@
+.article
+  margin: 26px 0
+
+.title
+  margin-top: 20px
+  height: 269px
+  background-color: $gray-light-color
+  display: flex
+  align-items: center
+  justify-content: space-around
+
+.article__title
+  width: 373px
+
+.article__heading--main
+  font-size: 21px
+  line-height: 1.33
+
+.article__paragraph--title
+  line-height: 1.4
+
+.article__button
+  width: 115px
+  height: 29px
+  border-radius: 2px
+  border: none
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.05)), linear-gradient(to bottom, #da4137, #da4137)
+  font-family: Tahoma, serif
+  font-size: 13px
+  font-weight: normal
+  font-stretch: normal
+  font-style: normal
+  line-height: 1.69
+  letter-spacing: normal
+  color: $gray-light-color
+
+.article__button:hover
+  cursor: pointer
+  background-image: linear-gradient(to top, rgba(49, 49, 49, 0.25), rgba(0, 0, 0, 0.05)), linear-gradient(to bottom, #da4137, #da4137)
+
+.article__paragraph
+  font-family: $p-font-family
+  font-size: $p-font-size
+  font-weight: $p-font-weight
+  font-stretch: $p-font-stretch
+  font-style: $p-font-style
+  line-height: $p-line-height
+  letter-spacing: $p-letter-spacing
+  color: $gray-color
+
+.article__heading
+  font-family: $title-font-family
+  font-size: $title-font-size
+  font-weight: $title-font-weight
+  font-stretch: $title-font-stretch
+  font-style: $title-font-style
+  line-height: $title-line-height
+  letter-spacing: $title-letter-spacing
+  color: $black-color
+  margin: 0
+
+.article__sections-with-images
+  display: flex
+  align-items: center
+  justify-content: space-around
+
+.article__section
+  width: 181px
+  display: flex
+  align-items: center
+
+.article__section:nth-child(3)
+  width: 138px
+
+.article__heading--third
+  margin-left: 16px
+  font-family: $p-font-family
+  font-size: $p-font-size
+  font-weight: $p-font-weight
+  font-stretch: $p-font-stretch
+  font-style: italic
+  line-height: $p-line-height
+  letter-spacing: $p-letter-spacing
+  color: $black-color
+
+@media (max-width: 900px)
+  .title
+    height: 330px
+
+  .article__title
+    width: 265px
+
+@media (max-width: 720px)
+  .title
+    height: 510px
+    flex-direction: column
+
+  .article__title
+    width: 97%
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+  .article__sections-with-images
+    flex-direction: column
+
+  .article__section:nth-child(3)
+    width: 181px
+
+@media (max-width: 430px)
+  .title
+    height: 570px
+
+  .article__image
+    width: 97%
+
+  .article__title
+    width: 97%
+
+  .article__heading--main
+    font-size: 24px
+
+  .article__paragraph--title
+    font-size: $p-font-size + 2px
+
+  .article__heading
+    font-size: $title-font-size + 3px
+
+  .article__paragraph
+    font-size: $p-font-size + 2px
+
+  .article__section
+    width: 181px
+    display: flex
+    align-items: center
+
+  .article__heading--third
+    font-size: $p-font-size + 2px
