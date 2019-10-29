@@ -1,21 +1,23 @@
+@import "variables"
+
 .header
   margin-top: 19px
   display: flex
   justify-content: space-between
 
-.logo
-  width: 87px
-  height: 41px
+  .logo
+    width: 87px
+    height: 41px
 
 .wrapper
   display: flex
   align-items: center
 
-.nav__burger-button
-  display: none
+  .nav__burger-button
+    display: none
 
-#nav-checkbox
-  display: none
+  #nav-checkbox
+    display: none
 
 .nav
   display: flex
@@ -28,37 +30,35 @@
   justify-content: space-between
   align-items: center
 
-.nav__link
-  font-family: $title-font-family
-  font-size: 16px
-  font-weight: bold
-  font-stretch: normal
-  font-style: normal
-  line-height: 1.19
-  letter-spacing: normal
-  color: $black-color
-  text-decoration: none
+  .nav__item
+    list-style: none
+    display: inline-block
 
-.nav__link:hover
-  display: block
-  position: relative
-  height: 27px
+    .nav__link
+      font-family: $font-family-Tahoma
+      font-size: 16px
+      font-weight: bold
+      line-height: 1.19
+      color: $black-color
+      text-decoration: none
+      transition: color .15s
 
-.nav__item
-  list-style: none
-  display: inline-block
+    .nav__link:hover
+      color: $gray-color
 
 @media (max-width: 720px)
   .nav
     width: 270px
 
-  .nav__list
-    padding: 0
+    .nav__list
+      padding: 0
 
-  .nav__link
-    font-family: $title-font-family
-    font-size: 13px
-    font-weight: bold
+      .nav__item
+
+        .nav__link
+          font-family: $font-family-Tahoma
+          font-size: 13px
+          font-weight: bold
 
 @media (max-width: 430px)
   .wrapper
@@ -67,28 +67,28 @@
     text-align: center
     width: 30px
 
-  .nav__burger-button
-    display: block
-    position: absolute
-    z-index: 2
-    width: 29px
-    height: 26px
+    .nav__burger-button
+      display: block
+      position: absolute
+      z-index: 2
+      width: 29px
+      height: 26px
 
-  .burger-line
-    position: absolute
-    width: 29px
-    height: 2px
-    background-color: $black-color
-    transition: .5s all
+      .burger-line
+        position: absolute
+        width: 29px
+        height: 2px
+        background-color: $black-color
+        transition: .5s all
 
-  .burger-line:nth-child(2)
-    top: 12px
+      .burger-line:nth-child(2)
+          top: 12px
 
-  .burger-line:nth-child(3)
-    top: 12px
+      .burger-line:nth-child(3)
+          top: 12px
 
-  .burger-line:nth-child(4)
-    top: 24px
+      .burger-line:nth-child(4)
+          top: 24px
 
   .nav
     display: block
@@ -103,25 +103,25 @@
     overflow: hidden
     transition: .5s all
 
-  .nav__list
-    display: contents
+    .nav__list
+      display: contents
 
-  .nav__item
-    display: block
+      .nav__item
+        display: block
 
-  .nav__link
-    display: block
-    padding: 10px
-    color: $black-color
-    border-top: 1px solid $gray-color
-    background-color: $white-color
-    font-size: 20px
+        .nav__link
+          display: block
+          padding: 10px
+          color: $black-color
+          border-top: 1px solid $gray-color
+          background-color: $white-color
+          font-size: 20px
 
-  .nav__link:last-child
-    border-bottom: 1px solid $gray-color
+        .nav__link:last-child
+          border-bottom: 1px solid $gray-color
 
-  .nav__link:hover
-    height: 23px
+        .nav__link:hover
+          height: 23px
 
   #nav-checkbox:checked ~ .nav
     max-height: 400px
